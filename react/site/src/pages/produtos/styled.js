@@ -188,9 +188,8 @@ const Container = styled.div`
 
 
     .button-create {
-        align-self: flex-end;
-        justify-self: flex-end;
         padding-bottom: 1.5em;
+        margin-left: 680px;
     }
 
     .button-create  button {
