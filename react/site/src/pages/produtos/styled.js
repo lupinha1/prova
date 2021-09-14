@@ -17,10 +17,10 @@ const Container = styled.div`
     }
 
     .bar-new-student {
-        border: 3px solid #986CDF;
+        border: 3px solid #119FDC;
         border-radius: .5em;
         margin-right: .4em;
-        background-color: #986CDF;
+        background-color: #119FDC;
     }
 
     .text-new-student {
@@ -35,8 +35,13 @@ const Container = styled.div`
 
     .input-new-student {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-top: 2.4em;
+    }
+
+    .inputs-cima{
+        display: flex;
+        flex-direction: row;
     }
 
     .agp-input {
@@ -47,6 +52,34 @@ const Container = styled.div`
     .input {
         margin-top: .5em;
         margin-bottom: .5em;
+    }
+
+    .input-imagem{
+        margin-top: .5em;
+        margin-bottom: .5em;
+        min-width: 50%;
+    }
+
+    .imput-imagem{
+        width: 565px;
+        height: 36px;
+
+        background: #FFFFFF;
+        border: 1px solid #A8A8A8;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding-left: .5em;
+    }
+
+    .input-descricao{
+        width: 565px;
+        height: 200px;
+
+        background: #FFFFFF;
+        border: 1px solid #A8A8A8;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding-left: .5em;
     }
 
     .input-left {
@@ -61,7 +94,43 @@ const Container = styled.div`
         margin-bottom: 1em;
     }
 
-    input {
+    .imagem-input{
+        min-width: 400px;
+    }
+
+    .div-link-imagem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .div-descricao{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .texto-link-imagem{
+        font-size: 18px;
+        color: #615858;
+        width: 5.5em;
+        padding-left: 1em;
+        font-weight: 800;
+    }
+
+    .texto-descricao{
+        font-size: 18px;
+        color: #615858;
+        width: 5.5em;
+        padding-left: 0.5em;
+        font-weight: 800;
+        margin-right: 0.5em;
+    }
+
+
+
+    .input input {
         width: 209px;
         height: 36px;
 
@@ -92,7 +161,21 @@ const Container = styled.div`
     .class-student {
         font-size: 18px;
         color: #615858;
-        margin-right: 0.8em;
+        margin-right: 0.3em;
+        font-weight: 800;
+    }
+
+    .class-student-estoque{
+        font-size: 18px;
+        color: #615858;
+        margin-right: 1.4em;
+        font-weight: 800;
+    }
+
+    .class-student-imagem{
+        font-size: 18px;
+        color: #615858;
+        margin-right: 0em;
         font-weight: 800;
     }
 
@@ -114,7 +197,7 @@ const Container = styled.div`
         width: 106px;
         height: 36px;
 
-        background: #E911C6;
+        background: #119FDC;
         border-radius: 44px;
         border: none;
         color: white;
@@ -221,7 +304,7 @@ const Container = styled.div`
     }
 
     thead {
-        background-color: #986CDF;
+        background-color: #119FDC;
     }
 
     table {
@@ -276,7 +359,7 @@ const Container = styled.div`
 
     .absolute {
         color: white;
-        background-color: #DB21BD;
+        background-color: #119FDC;
         border: 3px solid white;
         border-radius: 50%;
         position: absolute;

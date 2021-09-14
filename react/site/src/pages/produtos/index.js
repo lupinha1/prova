@@ -16,31 +16,53 @@ export default function Index() {
                         
                         <div class="text-new-student">
                             <div class="bar-new-student"></div>
-                            <div class="text-new-student">Novo Aluno</div>
+                            <div class="text-new-student">Novo Produto</div>
                         </div>
 
                         <div class="input-new-student"> 
-                            <div class="input-left">
-                                <div class="agp-input"> 
-                                    <div class="name-student"> Nome: </div>  
-                                    <div class="input"> <input /> </div>  
-                                </div> 
-                                <div class="agp-input">
-                                    <div class="number-student"> Chamada: </div>  
-                                    <div class="input"> <input /> </div> 
+                            <div className="inputs-cima">
+                                <div class="input-left">
+                                    <div class="agp-input"> 
+                                        <div class="name-student"> Nome: </div>  
+                                        <div class="input"> <input /> </div>  
+                                    </div> 
+                                    <div class="agp-input">
+                                        <div class="number-student"> Categoria: </div>  
+                                        <div class="input"> <input /> </div> 
+                                    </div>
+                                    <div class="agp-input">
+                                        <div class="number-student"> Avaliação: </div>  
+                                        <div class="input"> <input /> </div> 
+                                    </div>
+                                </div>
+
+                                <div class="input-right">
+                                    <div class="agp-input">
+                                        <div class="corse-student"> Preço DE: </div>  
+                                        <div class="input"> <input /> </div>  
+                                    </div>
+                                    <div class="agp-input">
+                                        <div class="class-student"> Preço POR: </div>  
+                                        <div class="input"> <input /> </div> 
+                                    </div>
+                                    <div class="agp-input">
+                                        <div class="class-student-estoque"> Estoque: </div>  
+                                        <div class="input"> <input /> </div> 
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="input-right">
-                                <div class="agp-input">
-                                    <div class="corse-student"> Curso: </div>  
-                                    <div class="input"> <input /> </div>  
+                            <div>
+                                <div className="div-link-imagem">
+                                        <div className="texto-link-imagem"> Link imagem: </div>  
+                                        <div > <input className="imput-imagem"/> </div> 
                                 </div>
-                                <div class="agp-input">
-                                    <div class="class-student"> Turma: </div>  
-                                    <div class="input"> <input /> </div> 
+                                <div className="div-descricao">
+                                        <div className="texto-descricao"> Descrição: </div>  
+                                        <div > <input className="input-descricao" /> </div> 
                                 </div>
                             </div>
+
                             <div class="button-create"> <button> Cadastrar </button> </div>
                         </div>
                     </div>
@@ -48,7 +70,7 @@ export default function Index() {
                     <div class="student-registered-box">
                         <div class="row-bar"> 
                             <div class="bar-new-student"> </div>
-                            <div class="text-registered-student"> Alunos Matriculados </div>
+                            <div class="text-registered-student"> Produtos Cadastrados </div>
                         </div>
                     
                         <table class ="table-user">

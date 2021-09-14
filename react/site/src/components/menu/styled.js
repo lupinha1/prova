@@ -11,8 +11,7 @@ const Container = styled.div`
 
     position: sticky;
     top: 0px;
-
-        
+    
     .header-left-box {
         display: flex;
         flex-direction: row;
@@ -34,7 +33,7 @@ const Container = styled.div`
     }
 
     .devSchool span {
-        color: #EA10C7;
+        color: #10EAEA;
     }
 
     .black-box {
