@@ -342,6 +342,17 @@ const Container = styled.div`
 
     .coluna-acao {
         width: .1em;
+
+    }
+
+    .coluna-acao button {
+        visibility: hidden;
+    }
+
+    tr:hover {
+        .coluna-acao button{
+            visibility: visible;
+        }
     }
 
     button {
