@@ -61,9 +61,10 @@ export default function Index() {
                                         <div className="texto-descricao"> Descrição: </div>  
                                         <div > <input className="input-descricao" /> </div> 
                                 </div>
+                                <div class="button-create"> <button> Cadastrar </button> </div>
                             </div>
 
-                            <div class="button-create"> <button> Cadastrar </button> </div>
+                            
                         </div>
                     </div>
 
@@ -76,11 +77,12 @@ export default function Index() {
                         <table class ="table-user">
                             <thead>
                                 <tr>
+                                    <th></th>
                                     <th> ID </th>
-                                    <th> Nome </th>
-                                    <th> Chamada </th>
-                                    <th> Turma </th>
-                                    <th> Curso </th>
+                                    <th> Produto </th>
+                                    <th> Categoria </th>
+                                    <th> Preço </th>
+                                    <th> Estoque </th>
                                     <th class="coluna-acao"> </th>
                                     <th class="coluna-acao"> </th>
                                 </tr>
@@ -88,45 +90,16 @@ export default function Index() {
                     
                             <tbody>
                                 <tr>
-                                    <td> 1 </td>
-                                    <td> Fulao da Silva Sauro</td>
+                                    <td>  </td>
+                                    <td> 1</td>
+                                    <td> Fone </td>
+                                    <td> Eletrônico </td>
+                                    <td> R$150,00</td>
                                     <td> 15 </td>
-                                    <td> InfoX </td>
-                                    <td> Informática </td>
                                     <td> <button> <img src="/assets/images/edit.svg" alt="" /> </button> </td>
                                     <td> <button> <img src="/assets/images/trash.svg" alt="" /> </button> </td>
                                 </tr>
                             
-                                <tr class="linha-alternada">
-                                    <td> 1 </td>
-                                    <td> Fulao da Silva Sauro</td>
-                                    <td> 16 </td>
-                                    <td> InfoX </td>
-                                    <td> Informática </td>
-                                    <td> </td>
-                                    <td> </td>
-                                </tr>
-
-                                <tr>
-                                    <td> 1 </td>
-                                    <td> Fulao da Silva Sauro</td>
-                                    <td> 17 </td>
-                                    <td> InfoX </td>
-                                    <td> Informática </td>
-                                    <td> </td>
-                                    <td> </td>
-                                </tr>
-
-                                <tr class="linha-alternada">
-                                    <td> 1 </td>
-                                    <td> Fulao da Silva Sauro</td>
-                                    <td> 18 </td>
-                                    <td> InfoX </td>
-                                    <td> Informática </td>
-                                    <td> </td>
-                                    <td> </td>
-                                </tr>
-                                
                             </tbody> 
                         </table>
                     </div>

@@ -108,7 +108,7 @@ const Container = styled.div`
     .div-descricao{
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        //align-items: flex-start;
     }
 
     .texto-link-imagem{
@@ -125,7 +125,7 @@ const Container = styled.div`
         width: 5.5em;
         padding-left: 0.5em;
         font-weight: 800;
-        margin-right: 0.5em;
+        //margin-right: 0.5em;
     }
 
 
@@ -190,6 +190,7 @@ const Container = styled.div`
     .button-create {
         padding-bottom: 1.5em;
         margin-left: 680px;
+        align-self: flex-end;
     }
 
     .button-create  button {

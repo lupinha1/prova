@@ -19,7 +19,7 @@ export default function Index() {
                 <img src="/assets/images/chevron-down.svg" alt="" />
             </div>
             <div className="left-box-aluno">
-                <div> Alunos </div>
+                <div> Produtos </div>
             </div> 
         </Container>
     )
