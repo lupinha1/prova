@@ -75,12 +75,12 @@ export default function Index() {
     function limpar(){
         setNome('');
         setCategoria('');
-        setAvaliacao();
+        setAvaliacao('');
         SetLinkimagem('');
         SetDescricaoo('');
-        SetPrecode();
-        SetPrecopor();
-        SetEstoque();
+        SetPrecode('');
+        SetPrecopor('');
+        SetEstoque('');
         SetIdalterando(0)
     }
 
