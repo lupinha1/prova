@@ -7,6 +7,8 @@ import { Container, Conteudo } from './styled'
 import Api from '../../service/api'
 import { useState, useEffect, useRef } from 'react';
 import LoadingBar from 'react-top-loading-bar'
+import { confirmAlert } from 'react-confirm-alert'; // Import
+import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
 const api = new Api();
 
@@ -83,12 +85,34 @@ export default function Index() {
     }
 
     async function remover(id){
-        loading.current.continuousStart();
-        let r = await api.remover(id)
-        toast("aluno removido!")
-        listar()
-        loading.current.complete();  
+        
+        confirmAlert(
+            {
+            title: 'Remover produto',
+            message: `Tem certeza que deseja remover o produto ${id}?`,
+            buttons: [
+                {
+                    label: 'Sim',
+                    onClick: async () => {
+                        let r = await api.remover(id);
+                        if (r.erro)
+                            toast(`${r.erro}`);
+                        else{
+                        toast ("Produto removido");
+                        listar();
+                        }
+                    }
+                },
+                {
+                    label: "Não"
+                }
+
+            ]
+        });
+     
     }
+            
+    
 
 
     useEffect(() => {
@@ -152,7 +176,7 @@ export default function Index() {
                                         <div className="texto-descricao"> Descrição: </div>  
                                         <div > <input className="input-descricao" type="text" value={descricaoo} onChange={e => SetDescricaoo(e.target.value)}/> </div> 
                                 </div>
-                                <div class="button-create"> <button onClick={inserir}> {idalterando == 0 ? "Cadastrar" : "Alterar" } </button> </div>
+                                <div class="button-create"> <button onClick={inserir}> {idalterando === 0 ? "Cadastrar" : "Alterar" } </button> </div>
                             </div>
 
                             
